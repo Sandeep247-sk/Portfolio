@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="Project page.css">
+    <title>Project page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">SK Devign</h2>
+        <ul id="nav-links">
+            <li><a href="/Home Page/Home.html">Home</a></li>
+            <li><a href="/About Page/About Page.html">About Me</a></li>
+            <li><a href="/Project Page/Project page.html">Projects</a></li>
+            <li><a href="/Contact Page/Contact Page.html">Contact Me</a></li>
+        </ul>
+        <button class="hire-btn">Hire Me</button>
+    </nav>
+
+    <div class="heading">
+        <h1>Project Page</h1>
+    </div>
+
+    <h1>🔒 Private Link Card Creator</h1>
+    <div class="login" id="loginPage" style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button id="loginBtn" class="loginBtn">Login</button>
+        <p id="loginMsg" style="color:red; display:none;">Incorrect password!</p>
+    </div>
+    
+    <div class="app" id="appPage" style="display:none; flex-direction:column; align-items:center; gap:10px;">
+        <input type="text" id="linkInput" placeholder="Enter webpage link" />
+        <input type="file" id="imageInput" accept="image/*" />
+        <button id="createBtn" class="createBtn">Create Card</button>
+    </div>
+
+    <div class="cards" id="cardContainer"></div>
+
+    <script src="Project.js"></script>
+</body>
+</html>
